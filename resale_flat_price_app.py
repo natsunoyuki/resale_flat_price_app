@@ -3,7 +3,7 @@ import numpy as np
 import streamlit as st
 
 from io import BytesIO
-import joblib
+import pickle
 import requests
 
 from resale_price_utils import *
@@ -51,7 +51,7 @@ def load_model():
     #model_load_state = st.text("Loading price prediction AI...")
     mlink = "https://github.com/natsunoyuki/resale_flat_price_app/blob/main/resale_price_lgb.pkl?raw=true"
     mfile = BytesIO(requests.get(mlink).content)
-    model = joblib.load(mfile)
+    model = pickle.load(mfile)
     #model_load_state.text('AI loaded!')
     return model
 
