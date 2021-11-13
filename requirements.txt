@@ -1,5 +1,2 @@
 numpy
 streamlit
-io
-joblib
-requests
