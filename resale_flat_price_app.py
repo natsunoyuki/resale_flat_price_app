@@ -49,7 +49,7 @@ X = np.array([[town, flat_type, storey_range, floor_area, age]])
 @st.cache
 def load_model():  
     model_load_state = st.text("Loading price prediction AI...")
-    mlink = "https://github.com/natsunoyuki/Data_Science/blob/master/resale_flat_prices/streamlit/resale_price_lgb.pkl?raw=true"
+    mlink = "https://github.com/natsunoyuki/resale_flat_price_app/blob/main/resale_price_lgb.pkl?raw=true"
     mfile = BytesIO(requests.get(mlink).content)
     model = joblib.load(mfile)
     model_load_state.text('AI loaded!')
