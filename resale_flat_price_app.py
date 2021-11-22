@@ -10,6 +10,8 @@ from resale_price_utils import *
 
 st.markdown("## 2021 Singapore Resale Flat Prices")
 
+st.image("https://github.com/natsunoyuki/resale_flat_price_app/blob/main/DSC_5989.JPG?raw=True")
+
 st.markdown("##### Have you ever wondered how much a particular flat in Singapore might go on the resale market? Look no further! This AI powered streamlit app estimates the resale price using only 5 parameters!")
 
 st.markdown("### Apartment Details")

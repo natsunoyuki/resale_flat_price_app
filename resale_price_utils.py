@@ -108,6 +108,19 @@ max_age = 55
 def age_scaler(x, xmin = min_age, xmax = max_age):
     return (x - xmin) / (xmax - xmin)
 
+# Latitude & longitude
+min_latitude = 1.27037951175815 
+max_latitude = 1.45707121613828
+
+min_longitude = 103.685228417825 
+max_longitude = 103.988093482829
+
+def lat_scaler(x, xmin = min_latitude, xmax = max_latitude):
+    return (x - xmin) / (xmax - xmin)
+
+def lon_scaler(x, xmin = min_longitude, xmax = max_longitude):
+    return (x - xmin) / (xmax - xmin)
+
 # Target post processing functions.
 
 # Resale price
